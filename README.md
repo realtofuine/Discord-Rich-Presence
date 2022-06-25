@@ -1,6 +1,12 @@
 # Discord-Rich-Presence
 Custom Discord Rich Presence based on running apps using a Python script
 
+## Preinstalled apps
+
+- Adobe Acrobat DC
+- Xournal++
+- Microsoft Word
+
 ## Setting your apps
 In `appmanager.py`, copy the elif statements and add the .exe files of the apps you want the script to detect. Use `xournal.py` as a template to create another file that includes the rich presence details of the app you want to detect. Modify the stuff under `RPC.update` to set the images and details you want the rich presence to include for that app.
 
