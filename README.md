@@ -2,11 +2,11 @@
 Custom Discord Rich Presence based on running apps using a Python script
 
 ## Setting your apps
-In `discordrpc.py`, add the .exe files of the apps you want the script to detect. Modify the stuff under `RPC.update` to set the images and details you want the rich presence to include.
+In `appmanager.py`, copy the elif statements and add the .exe files of the apps you want the script to detect. Use `xournal.py` as a template to create another file that includes the rich presence details of the app you want to detect. Modify the stuff under `RPC.update` to set the images and details you want the rich presence to include for that app.
 
-The images can only be modified by creating your own client in the [Discord Developer Portal](https://discord.com/developers/applications) and then copying the number under `APPLICATION ID`.
+The images can only be modified by creating your own clients in the [Discord Developer Portal](https://discord.com/developers/applications) for each app you want a rich presence for and then copying the number under `APPLICATION ID` into each file corresponding to the detected app.
 
 You can run the script automatically at startup using a batch file and Windows Task Scheduler.
 
 ## Thinking about
-I am not skilled in python at all, so I am still trying to think of a way to change the name of the client for every app (so it doesn't just say Playing DiscordRPC) as the status.
+I am trying to make the script more efficient. Currently, every 15 seconds, the script runs agains and consumes CPU.
