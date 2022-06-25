@@ -15,7 +15,6 @@ while ("Acrobat.exe" in (i.name() for i in psutil.process_iter())): #keep repeat
         details = "Adobe Acrobat DC",
         state = "Reading a PDF",
         start = start,
-        buttons = [{"label": "Hello", "url": "https://google.com"}, {"label": "Discord", "url": "https://discord.gg/"}] #up to 2 buttons allowed
     )
     time.sleep(15) #can be as low as 15, depends on how often you want to update rich presence
 
