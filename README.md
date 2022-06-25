@@ -8,5 +8,9 @@ The images can only be modified by creating your own clients in the [Discord Dev
 
 You can run the script automatically at startup using a batch file and Windows Task Scheduler.
 
+## Usage
+
+Run `appmanager.py` to start the script. You can automate this at startup by creating a task in Windows Task Scheduler.
+
 ## Thinking about
 I am trying to make the script more efficient. Currently, every 15 seconds, the script runs agains and consumes CPU.
