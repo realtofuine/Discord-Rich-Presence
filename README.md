@@ -16,7 +16,9 @@ You can run the script automatically at startup using a batch file and Windows T
 
 ## Usage
 
-Run `appmanager.py` to start the script. You can automate this at startup by creating a task in Windows Task Scheduler.
+Run `appmanager.py` to start the script.
+
+You can automate this at startup by creating a task in Windows Task Scheduler that runs `rundiscordrp.bat` at startup.
 
 ## Thinking about
 I am trying to make the script more efficient. Currently, every 15 seconds, the script runs agains and consumes CPU.
