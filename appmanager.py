@@ -10,6 +10,8 @@ while True: #keep repeating updating rich presence
         os.system("python adobeacrobat.py")
     elif ("WINWORD.EXE" in (i.name() for i in psutil.process_iter())): #if Word is running
         os.system("python word.py")
+    elif ("Zoom.exe" in (i.name() for i in psutil.process_iter())): #if Zoom is running
+        os.system("python zoom.py")
     else:
         time.sleep(15)
         
