@@ -1,7 +1,8 @@
-from pypresence import Presence
-import time
-import psutil
 import os
+import time
+
+import psutil
+from pypresence import Presence
 
 while True: #keep repeating updating rich presence
     if ("xournalpp.exe" in (i.name() for i in psutil.process_iter())): #if Xournal++ is running
@@ -12,6 +13,8 @@ while True: #keep repeating updating rich presence
         os.system("python word.py")
     elif ("Zoom.exe" in (i.name() for i in psutil.process_iter())): #if Zoom is running
         os.system("python zoom.py")
+    elif ("Adobe Premiere Pro.exe" in (i.name() for i in psutil.process_iter())): #if Adobe Premiere Pro is running
+        os.system("python premiere.py")
     else:
         time.sleep(15)
         
