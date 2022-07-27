@@ -4,6 +4,7 @@ Custom Discord Rich Presence based on running apps using a Python script
 ## Preinstalled apps
 
 - Adobe Acrobat DC
+- Adobe Premiere Pro
 - Xournal++
 - Microsoft Word
 - Zoom
